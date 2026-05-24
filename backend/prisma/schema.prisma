@@ -1,0 +1,86 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  email     String   @unique
+  senha     String
+  telefone  String?
+  tipo      TipoUser @default(CLIENTE)
+
+  imoveis   Imovel[]
+  reservas  Reserva[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Imovel {
+  id        Int          @id @default(autoincrement())
+  titulo    String
+  descricao String
+  tipo      TipoImovel
+  preco     Float
+  cidade    String
+  bairro    String
+  endereco  String?
+  imagem    String?
+  contacto  String?
+  estado    EstadoImovel @default(DISPONIVEL)
+
+  proprietarioId Int
+  proprietario   User @relation(fields: [proprietarioId], references: [id])
+
+  reservas Reserva[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Reserva {
+  id       Int           @id @default(autoincrement())
+  mensagem String?
+  estado   EstadoReserva @default(PENDENTE)
+
+  clienteId Int
+  cliente   User @relation(fields: [clienteId], references: [id])
+
+  imovelId Int
+  imovel   Imovel @relation(fields: [imovelId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum TipoUser {
+  ADMIN
+  PROPRIETARIO
+  CLIENTE
+}
+
+enum TipoImovel {
+  QUARTO
+  CASA
+  APARTAMENTO
+  DEPENDENCIA
+}
+
+enum EstadoImovel {
+  DISPONIVEL
+  RESERVADO
+  ARRENDADO
+}
+
+enum EstadoReserva {
+  PENDENTE
+  CONFIRMADA
+  CANCELADA
+  FINALIZADA
+}
