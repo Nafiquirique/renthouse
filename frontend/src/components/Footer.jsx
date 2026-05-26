@@ -34,7 +34,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 RentHouse. | Desencolcido por Fernando Nafiquirique cesar Fernando | Projeto acadêmico de programação web.</p>
+        <p>© 2026 RentHouse. | Desenvolvido por Fernando Nafiquirique cesar Fernando | Projeto acadêmico de programação web.</p>
       </div>
     </footer>
   );
