@@ -88,7 +88,7 @@ cd renthouse
 
 ---
 
-# 🔧 Configuração do Backend
+#  Configuração do Backend
 
 ## Entrar na pasta backend
 
@@ -146,10 +146,10 @@ npm run dev
 
 ---
 
-# 🌐 Deploy
+#  Deploy
 
 ## Frontend
-Hospedado na Vercel.
+Hospedado na Vercel: https://renthouse-livid.vercel.app/
 
 ## Backend
 Hospedado no Render.
