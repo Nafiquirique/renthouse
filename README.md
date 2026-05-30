@@ -1,4 +1,4 @@
-# 🏠 RentHouse
+# RentHouse
 
 Sistema web para arrendamento e reserva de imóveis em Moçambique.
 
@@ -6,7 +6,7 @@ O RentHouse permite que proprietários publiquem imóveis disponíveis para arre
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 ## Frontend
 - React.js
@@ -30,22 +30,22 @@ O RentHouse permite que proprietários publiquem imóveis disponíveis para arre
 
 ---
 
-# 📌 Funcionalidades
+#  Funcionalidades
 
-✅ Cadastro de utilizadores  
-✅ Login com autenticação JWT  
-✅ Publicação de imóveis  
-✅ Atualização e remoção de imóveis  
-✅ Reserva de imóveis online  
-✅ Gestão de reservas  
-✅ Perfil do utilizador  
-✅ Painel administrativo  
-✅ Responsividade  
-✅ Modo escuro  
+ Cadastro de utilizadores  
+ Login com autenticação JWT  
+ Publicação de imóveis  
+ Atualização e remoção de imóveis  
+ Reserva de imóveis online  
+ Gestão de reservas  
+ Perfil do utilizador  
+ Painel administrativo  
+ Responsividade  
+ Modo escuro  
 
 ---
 
-# 📂 Estrutura do Projeto
+#  Estrutura do Projeto
 
 ```bash
 renthouse/
@@ -70,7 +70,7 @@ renthouse/
 
 ---
 
-# ⚙️ Instalação Local
+#  Instalação Local
 
 ## 1. Clonar o repositório
 
@@ -124,7 +124,7 @@ npm start
 
 ---
 
-# 🎨 Configuração do Frontend
+#  Configuração do Frontend
 
 ## Entrar na pasta frontend
 
@@ -159,7 +159,7 @@ Hospedado no Neon PostgreSQL.
 
 ---
 
-# 🔒 Segurança
+#  Segurança
 
 O sistema utiliza:
 - JWT Authentication
@@ -169,7 +169,7 @@ O sistema utiliza:
 
 ---
 
-# 📱 Responsividade
+#  Responsividade
 
 O sistema adapta-se a:
 - Smartphones
@@ -178,12 +178,12 @@ O sistema adapta-se a:
 
 ---
 
-# 👨‍💻 Autor
+#  Autor
 
 Nafiquirique
 
 ---
 
-# 📄 Licença
+#  Licença
 
 Este projeto foi desenvolvido para fins académicos.
